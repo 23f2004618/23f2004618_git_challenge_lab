@@ -1,0 +1,9 @@
+name: Git-workshop
+on: push
+jobs:
+  test:
+    name: git
+    steps:
+      - name: 23f2004618@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+      
