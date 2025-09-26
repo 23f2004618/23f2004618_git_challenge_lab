@@ -1,9 +1,15 @@
 name: Git-workshop
-on: push
+on:
+  schedule: 
+  - cron: "0 12 * * *"
+  workflow-dispatch:
+  
 jobs:
-  test:
-    name: 23f2004618@ds.study.iitm.ac.in
+  collect-iss-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 23f2004618@ds.study.iitm.ac.in
         run: echo "Hello, world!"
-      
+       
